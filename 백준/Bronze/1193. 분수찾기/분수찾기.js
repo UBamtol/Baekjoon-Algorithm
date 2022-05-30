@@ -2,7 +2,6 @@ const fs = require("fs");
 const inputData = fs.readFileSync(0, "utf8").toString().trim();
 
 let A = inputData;
-let answer = 0;
 let count = 0;
 let num = 0;
 let numerator = 0; // 분자
