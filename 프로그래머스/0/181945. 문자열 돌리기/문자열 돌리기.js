@@ -10,6 +10,5 @@ rl.on('line', function (line) {
     input = [line];
 }).on('close',function(){
     str = input[0];
-    str = str.split('');
-    str.map(e=>console.log(e))
+    [...str].map(e=>console.log(e))
 });
