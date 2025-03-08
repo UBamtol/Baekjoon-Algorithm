@@ -13,9 +13,11 @@ function solution(n, words) {
     }
     for(let i = 0; i < words.length-1; i++){
         if(words.slice(0,i+1).includes(array[i+1][1]) || (words[i][words[i].length-1] !== words[i+1][0])){
-            return answer = [array[i+1][0], Math.ceil((i+2)/n)]
+            answer = [array[i+1][0], Math.ceil((i+2)/n)];
+            break;
         } else if(i+1 === array.length-1 && array[i][1] !== array[i+1][1]){
-            return answer = [0,0]
+            answer = [0,0]
+            break;
         } 
     }    
 
